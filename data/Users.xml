@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfUser xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <User>
+    <username>muhammed</username>
+    <password>1292201552198220877194054219216496220885</password>
+    <email>suwanehmuhammed@yahoo.com</email>
+    <role>Administrator</role>
+  </User>
+  <User>
+    <username>hakam</username>
+    <password>1292201552198220877194054219216496220885</password>
+    <email>magnitar123@gmail.com</email>
+    <role>Staff</role>
+  </User>
+  <User>
+    <username>yavuz</username>
+    <password>1292201552198220877194054219216496220885</password>
+    <email>yavuzucarkus9@gmail.com</email>
+    <role>Staff</role>
+  </User>
+  <User>
+    <username>enes</username>
+    <password>1292201552198220877194054219216496220885</password>
+    <email>Jcooligame@gmail.com</email>
+    <role>Staff</role>
+  </User>
+  <User>
+    <username>resulberdi</username>
+    <password>1292201552198220877194054219216496220885</password>
+    <email>akyyevresul99@gmail.com</email>
+    <role>Staff</role>
+  </User>
+</ArrayOfUser>

@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3E80AB2E-561A-4D86-B3D9-F600B040E724}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ReqApp</RootNamespace>
+    <AssemblyName>ReqApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Launch.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=5.15.4.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>packages\FontAwesome.Sharp.5.15.4\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="data\DataAccess.cs" />
+    <Compile Include="helpers\Encryption.cs" />
+    <Compile Include="helpers\TimeOut.cs" />
+    <Compile Include="models\Calisan.cs" />
+<<<<<<< HEAD
+    <Compile Include="models\Gereksinim.cs" />
+=======
+>>>>>>> 531b064cca5188faab12020fa4119b0cd821ec69
+    <Compile Include="models\Gorev.cs" />
+    <Compile Include="models\Session.cs" />
+    <Compile Include="models\User.cs" />
+    <Compile Include="pages\EsoguTechReq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\EsoguTechReq.Designer.cs">
+      <DependentUpon>EsoguTechReq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\subpages\Calisanlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\subpages\Calisanlar.Designer.cs">
+      <DependentUpon>Calisanlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\subpages\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\subpages\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\subpages\Gereksinimler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\subpages\Gereksinimler.Designer.cs">
+      <DependentUpon>Gereksinimler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\subpages\Gorevler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\subpages\Gorevler.Designer.cs">
+      <DependentUpon>Gorevler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\subpages\Gorevlerim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\subpages\Gorevlerim.Designer.cs">
+      <DependentUpon>Gorevlerim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\subpages\IsDegerlendirme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\subpages\IsDegerlendirme.Designer.cs">
+      <DependentUpon>IsDegerlendirme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\subpages\Profil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\subpages\Profil.Designer.cs">
+      <DependentUpon>Profil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\UserAuthentication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\UserAuthentication.Designer.cs">
+      <DependentUpon>UserAuthentication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="pages\EsoguTechReq.resx">
+      <DependentUpon>EsoguTechReq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\subpages\Calisanlar.resx">
+      <DependentUpon>Calisanlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\subpages\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\subpages\Gereksinimler.resx">
+      <DependentUpon>Gereksinimler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\subpages\Gorevler.resx">
+      <DependentUpon>Gorevler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\subpages\Gorevlerim.resx">
+      <DependentUpon>Gorevlerim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\subpages\IsDegerlendirme.resx">
+      <DependentUpon>IsDegerlendirme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\subpages\Profil.resx">
+      <DependentUpon>Profil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="pages\UserAuthentication.resx">
+      <DependentUpon>UserAuthentication.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="data\Calisanlar.xml" />
+    <Content Include="data\Gereksinimler.xml" />
+    <Content Include="data\Gorevler.xml" />
+    <Content Include="Launch.ico" />
+    <Content Include="static\logo\Logo.png" />
+    <Content Include="static\logo\ReqApp.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
