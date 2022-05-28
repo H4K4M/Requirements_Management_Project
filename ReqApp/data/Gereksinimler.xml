@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfGereksinim xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Gereksinim>
+    <Id>qpbsphmxnhjmhcvibsmfnrjmvsispyymxpzfwwbsjtohfrbsku1287</Id>
+    <GereksinimAdi>Bug Fixing</GereksinimAdi>
+    <GereksinimKodu>RMAP 45</GereksinimKodu>
+    <Aciklama>You need to fix the bug in issue 25</Aciklama>
+    <EklemeTarihi>5/28/2022 4:34:26 PM</EklemeTarihi>
+  </Gereksinim>
+  <Gereksinim>
+    <Id>plbdhkpfzjguqqutljpcknrxplcxkgixtijiulvgmsqnqaxyaz7838</Id>
+    <GereksinimAdi>Issue 25</GereksinimAdi>
+    <GereksinimKodu>RMAP 28</GereksinimKodu>
+    <Aciklama>Side menu issues. Try centering icons</Aciklama>
+    <EklemeTarihi>5/28/2022 4:56:19 PM</EklemeTarihi>
+  </Gereksinim>
+  <Gereksinim>
+    <Id>difzbtdnvhrutbjbigmzzojprxegpndwkmeooihoqyzzvyxmhz6444</Id>
+    <GereksinimAdi>Issue 27</GereksinimAdi>
+    <GereksinimKodu>RMAP 86</GereksinimKodu>
+    <Aciklama>Debug writers class</Aciklama>
+    <EklemeTarihi>5/28/2022 4:56:51 PM</EklemeTarihi>
+  </Gereksinim>
+  <Gereksinim>
+    <Id>soatpzphepxxhdvkgwvnzyxibokutzrzqylhkspoybdytasvan6959</Id>
+    <GereksinimAdi>Database Management</GereksinimAdi>
+    <GereksinimKodu>DB 87</GereksinimKodu>
+    <Aciklama>Populate student' table</Aciklama>
+    <EklemeTarihi>5/28/2022 4:57:33 PM</EklemeTarihi>
+  </Gereksinim>
+</ArrayOfGereksinim>
