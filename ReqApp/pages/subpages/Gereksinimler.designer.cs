@@ -141,7 +141,7 @@ namespace ReqApp.pages.subpages
             this.gereksinimListView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gereksinimListView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gereksinimListView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.gereksinimListView.ColumnHeadersHeight = 70;
+            this.gereksinimListView.ColumnHeadersHeight = 30;
             this.gereksinimListView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.gereksinimListView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.GereksinimId,

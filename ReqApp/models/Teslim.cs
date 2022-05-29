@@ -6,10 +6,16 @@ using System.Threading.Tasks;
 
 namespace ReqApp.models
 {
-    public class TeslimEdildi
+    public class Teslim
     {
+        public string Id { get; set; }
         public Calisan calisan { get; set; }
         public Gorev gorev { get; set; }
+
+        public string gorevLinki { get; set; }
+
         public string TeslimTarihi { get; set;}
+
+        public bool teslimDegerlendirildiMi { get; set; } = false;
     }
 }

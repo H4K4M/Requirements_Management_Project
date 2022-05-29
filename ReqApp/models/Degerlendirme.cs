@@ -8,10 +8,10 @@ namespace ReqApp.models
 {
     public class Degerlendirme
     { 
-        public TeslimEdildi teslim { get; set; }
+        public Teslim teslim { get; set; }
 
-        public DegerlendirmeType degerlendirme { get; set; }
+        public List<string> secilenStateler { get; set; }
 
-        public Sonuc sonuc { get; set; }
+        public string teslimSonucu { get; set; }
     }
 }
