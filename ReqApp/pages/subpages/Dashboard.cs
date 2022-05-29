@@ -19,8 +19,6 @@ namespace ReqApp.pages.subpages
         public Dashboard()
         {
             InitializeComponent();
-
-            initLabeCounts();
         }
 
         private void initLabeCounts()
@@ -34,6 +32,12 @@ namespace ReqApp.pages.subpages
             this.incompleteTaskLabel.Text = incompleteTaskCount.ToString();
             this.requirementLabel.Text = reqCount.ToString();
             this.workersLabel.Text = workersCount.ToString();
+        }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+
+            initLabeCounts();
         }
     }
 }

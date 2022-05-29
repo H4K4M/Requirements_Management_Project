@@ -94,7 +94,7 @@ namespace ReqApp.pages.subpages
                 // delete gereksinim
                 if(senderGrid.Columns[e.ColumnIndex] == this.Sil)
                 {
-                    DataAccess.DeleteGereksinim(gereksinimler[e.RowIndex].Id);
+                    DataAccess.DeleteGereksinim(gereksinimListView.Rows[e.RowIndex].Cells[0].Value.ToString());
                     gereksinimListView.Rows.RemoveAt(e.RowIndex);
 
                     if (GuncelemeButton.Visible)

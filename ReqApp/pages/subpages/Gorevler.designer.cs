@@ -42,12 +42,14 @@ namespace ReqApp.pages.subpages
             this.gereksinimlerCheckList = new System.Windows.Forms.CheckedListBox();
             this.calisanComboBox = new System.Windows.Forms.ComboBox();
             this.gorevListView = new System.Windows.Forms.DataGridView();
-            this.Calisan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label7 = new System.Windows.Forms.Label();
+            this.GorevId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GörevAdi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GorevKodu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Calisan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GörevDurumu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EklemeTarihi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Silme = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label7 = new System.Windows.Forms.Label();
+            this.Silme = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gorevListView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,7 +68,7 @@ namespace ReqApp.pages.subpages
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(60, 77);
+            this.label2.Location = new System.Drawing.Point(62, 81);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(99, 25);
             this.label2.TabIndex = 1;
@@ -76,7 +78,7 @@ namespace ReqApp.pages.subpages
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1028, 71);
+            this.label3.Location = new System.Drawing.Point(60, 177);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(117, 25);
             this.label3.TabIndex = 2;
@@ -86,7 +88,7 @@ namespace ReqApp.pages.subpages
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(60, 175);
+            this.label4.Location = new System.Drawing.Point(60, 271);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(92, 25);
             this.label4.TabIndex = 3;
@@ -96,7 +98,7 @@ namespace ReqApp.pages.subpages
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(567, 77);
+            this.label5.Location = new System.Drawing.Point(567, 79);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(78, 25);
             this.label5.TabIndex = 4;
@@ -106,7 +108,7 @@ namespace ReqApp.pages.subpages
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(567, 175);
+            this.label6.Location = new System.Drawing.Point(567, 171);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(131, 25);
             this.label6.TabIndex = 5;
@@ -123,27 +125,29 @@ namespace ReqApp.pages.subpages
             // GorevKoduTextBox
             // 
             this.GorevKoduTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GorevKoduTextBox.Location = new System.Drawing.Point(1033, 115);
+            this.GorevKoduTextBox.Location = new System.Drawing.Point(65, 212);
             this.GorevKoduTextBox.Name = "GorevKoduTextBox";
             this.GorevKoduTextBox.Size = new System.Drawing.Size(379, 34);
             this.GorevKoduTextBox.TabIndex = 7;
             // 
             // aciklamaTextBox
             // 
-            this.aciklamaTextBox.Location = new System.Drawing.Point(64, 215);
+            this.aciklamaTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aciklamaTextBox.Location = new System.Drawing.Point(64, 311);
             this.aciklamaTextBox.Multiline = true;
             this.aciklamaTextBox.Name = "aciklamaTextBox";
-            this.aciklamaTextBox.Size = new System.Drawing.Size(372, 243);
+            this.aciklamaTextBox.Size = new System.Drawing.Size(372, 120);
             this.aciklamaTextBox.TabIndex = 8;
             // 
             // KaydetButonu
             // 
             this.KaydetButonu.BackColor = System.Drawing.Color.Teal;
+            this.KaydetButonu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.KaydetButonu.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.KaydetButonu.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.KaydetButonu.Location = new System.Drawing.Point(72, 492);
+            this.KaydetButonu.Location = new System.Drawing.Point(64, 462);
             this.KaydetButonu.Name = "KaydetButonu";
-            this.KaydetButonu.Size = new System.Drawing.Size(857, 62);
+            this.KaydetButonu.Size = new System.Drawing.Size(380, 62);
             this.KaydetButonu.TabIndex = 9;
             this.KaydetButonu.Text = "Kaydet";
             this.KaydetButonu.UseVisualStyleBackColor = false;
@@ -152,9 +156,9 @@ namespace ReqApp.pages.subpages
             // gereksinimlerCheckList
             // 
             this.gereksinimlerCheckList.FormattingEnabled = true;
-            this.gereksinimlerCheckList.Location = new System.Drawing.Point(572, 216);
+            this.gereksinimlerCheckList.Location = new System.Drawing.Point(572, 209);
             this.gereksinimlerCheckList.Name = "gereksinimlerCheckList";
-            this.gereksinimlerCheckList.Size = new System.Drawing.Size(357, 242);
+            this.gereksinimlerCheckList.Size = new System.Drawing.Size(357, 208);
             this.gereksinimlerCheckList.TabIndex = 10;
             // 
             // calisanComboBox
@@ -168,29 +172,46 @@ namespace ReqApp.pages.subpages
             // 
             // gorevListView
             // 
+            this.gorevListView.AllowUserToAddRows = false;
             this.gorevListView.BackgroundColor = System.Drawing.SystemColors.Control;
             this.gorevListView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gorevListView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
-            this.gorevListView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gorevListView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.gorevListView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.gorevListView.ColumnHeadersHeight = 50;
             this.gorevListView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Calisan,
+            this.GorevId,
             this.GörevAdi,
+            this.GorevKodu,
+            this.Calisan,
             this.GörevDurumu,
             this.EklemeTarihi,
             this.Silme});
-            this.gorevListView.Location = new System.Drawing.Point(72, 631);
+            this.gorevListView.Location = new System.Drawing.Point(67, 613);
             this.gorevListView.Name = "gorevListView";
             this.gorevListView.RowHeadersWidth = 51;
             this.gorevListView.RowTemplate.Height = 24;
-            this.gorevListView.Size = new System.Drawing.Size(864, 273);
-            this.gorevListView.TabIndex = 12;
+            this.gorevListView.Size = new System.Drawing.Size(982, 378);
+            this.gorevListView.TabIndex = 17;
+            this.gorevListView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gorevListView_CellContentClick);
             // 
-            // Calisan
+            // label7
             // 
-            this.Calisan.HeaderText = "Çalışan";
-            this.Calisan.MinimumWidth = 6;
-            this.Calisan.Name = "Calisan";
-            this.Calisan.Width = 200;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Red;
+            this.label7.Location = new System.Drawing.Point(62, 569);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(153, 29);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Görev Listesi";
+            // 
+            // GorevId
+            // 
+            this.GorevId.HeaderText = "Gorev Id";
+            this.GorevId.MinimumWidth = 6;
+            this.GorevId.Name = "GorevId";
+            this.GorevId.Visible = false;
+            this.GorevId.Width = 125;
             // 
             // GörevAdi
             // 
@@ -198,6 +219,20 @@ namespace ReqApp.pages.subpages
             this.GörevAdi.MinimumWidth = 6;
             this.GörevAdi.Name = "GörevAdi";
             this.GörevAdi.Width = 150;
+            // 
+            // GorevKodu
+            // 
+            this.GorevKodu.HeaderText = "Gorev Kodu";
+            this.GorevKodu.MinimumWidth = 6;
+            this.GorevKodu.Name = "GorevKodu";
+            this.GorevKodu.Width = 125;
+            // 
+            // Calisan
+            // 
+            this.Calisan.HeaderText = "Çalışan";
+            this.Calisan.MinimumWidth = 6;
+            this.Calisan.Name = "Calisan";
+            this.Calisan.Width = 200;
             // 
             // GörevDurumu
             // 
@@ -218,18 +253,11 @@ namespace ReqApp.pages.subpages
             this.Silme.HeaderText = "Actions";
             this.Silme.MinimumWidth = 6;
             this.Silme.Name = "Silme";
+            this.Silme.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Silme.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Silme.Text = "Sil";
+            this.Silme.UseColumnTextForButtonValue = true;
             this.Silme.Width = 125;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Location = new System.Drawing.Point(67, 587);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(153, 29);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Görev Listesi";
             // 
             // Gorevler
             // 
@@ -272,10 +300,12 @@ namespace ReqApp.pages.subpages
         private System.Windows.Forms.ComboBox calisanComboBox;
         private System.Windows.Forms.DataGridView gorevListView;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Calisan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GorevId;
         private System.Windows.Forms.DataGridViewTextBoxColumn GörevAdi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GorevKodu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Calisan;
         private System.Windows.Forms.DataGridViewTextBoxColumn GörevDurumu;
         private System.Windows.Forms.DataGridViewTextBoxColumn EklemeTarihi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Silme;
+        private System.Windows.Forms.DataGridViewButtonColumn Silme;
     }
 }
