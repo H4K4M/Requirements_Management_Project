@@ -15,7 +15,7 @@ namespace ReqApp.models
         public string GorevKodu { get; set; }
         public string Aciklama { get; set; }
 
-        public string gorevDurumu { get; set; } = Feedback.GetGorevDurumu(DegerlendirmeType.Tamamlanmamis);
+        public string gorevDurumu { get; set; } = "Tamamlanmamış";
 
         public string teslimDurumu { get; set; } = "Teslim Edilmedi";
 

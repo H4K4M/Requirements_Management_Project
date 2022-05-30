@@ -1,44 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfGorev xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Gorev>
-    <Id>yjqzqaxgvxvtzojmpbaylsjrycrgjsyccmncnvubqywtsfaqrc6924</Id>
-    <GorevAdi>Database Seeding</GorevAdi>
-    <GorevKodu>RMAP-45</GorevKodu>
-    <Aciklama>Seed database with user data</Aciklama>
-    <gorevDurumu>Kontrol ediliyor</gorevDurumu>
-    <teslimDurumu>Teslim Edildi</teslimDurumu>
-    <EklemeTarihi>5/29/2022 12:45:16 PM</EklemeTarihi>
-    <calisan>
-      <Id>vplvapmctohgeagmkhbzvojbjmnzvwunjsmtpszxdnrmedlqtu7177</Id>
-      <Adi>resulberdi</Adi>
-      <Soyad>akyyev</Soyad>
-      <Dogum>1990-1-1</Dogum>
-      <Maas>7000</Maas>
-      <user>
-        <Id>vplvapmctohgeagmkhbzvojbjmnzvwunjsmtpszxdnrmedlqtu7177</Id>
-        <username>resulberdi</username>
-        <password>1292201552198220877194054219216496220885</password>
-        <email>resulberdi@yahoo.com</email>
-        <role>Staff</role>
-      </user>
-    </calisan>
-    <gereksinimler>
-      <Gereksinim>
-        <Id>jdtfsqwltihuuacktsxdndzphfaxgsmxgigcjqokqatcswbdfb2179</Id>
-        <GereksinimAdi>Seeding</GereksinimAdi>
-        <GereksinimKodu>SEED-56</GereksinimKodu>
-        <Aciklama>Seed database</Aciklama>
-        <EklemeTarihi>5/29/2022 12:04:32 PM</EklemeTarihi>
-      </Gereksinim>
-    </gereksinimler>
-  </Gorev>
-  <Gorev>
     <Id>nkevfayaoiqxcysrnbgztgzhnwpztcbohblsxqhcovgsaauvzo5357</Id>
     <GorevAdi>Create database</GorevAdi>
     <GorevKodu>CR-DB-45</GorevKodu>
     <Aciklama>Create database</Aciklama>
-    <gorevDurumu>Tamanlanmamiş</gorevDurumu>
-    <teslimDurumu>Teslim Edilmedi</teslimDurumu>
+    <gorevDurumu>Kontrol ediliyor</gorevDurumu>
+    <teslimDurumu>Teslim Edildi</teslimDurumu>
     <EklemeTarihi>5/29/2022 12:46:26 PM</EklemeTarihi>
     <calisan>
       <Id>vqjchfklobnhwttxmnnxshdwhxwwfawfaezwzqfnfglvpgutkg9688</Id>
@@ -72,11 +40,43 @@
     </gereksinimler>
   </Gorev>
   <Gorev>
+    <Id>yjqzqaxgvxvtzojmpbaylsjrycrgjsyccmncnvubqywtsfaqrc6924</Id>
+    <GorevAdi>Database Seeding</GorevAdi>
+    <GorevKodu>RMAP-45</GorevKodu>
+    <Aciklama>Seed database with user data</Aciklama>
+    <gorevDurumu>Onaylandi</gorevDurumu>
+    <teslimDurumu>Teslim Edildi</teslimDurumu>
+    <EklemeTarihi>5/29/2022 12:45:16 PM</EklemeTarihi>
+    <calisan>
+      <Id>vplvapmctohgeagmkhbzvojbjmnzvwunjsmtpszxdnrmedlqtu7177</Id>
+      <Adi>resulberdi</Adi>
+      <Soyad>akyyev</Soyad>
+      <Dogum>1990-1-1</Dogum>
+      <Maas>7000</Maas>
+      <user>
+        <Id>vplvapmctohgeagmkhbzvojbjmnzvwunjsmtpszxdnrmedlqtu7177</Id>
+        <username>resulberdi</username>
+        <password>1292201552198220877194054219216496220885</password>
+        <email>resulberdi@yahoo.com</email>
+        <role>Staff</role>
+      </user>
+    </calisan>
+    <gereksinimler>
+      <Gereksinim>
+        <Id>jdtfsqwltihuuacktsxdndzphfaxgsmxgigcjqokqatcswbdfb2179</Id>
+        <GereksinimAdi>Seeding</GereksinimAdi>
+        <GereksinimKodu>SEED-56</GereksinimKodu>
+        <Aciklama>Seed database</Aciklama>
+        <EklemeTarihi>5/29/2022 12:04:32 PM</EklemeTarihi>
+      </Gereksinim>
+    </gereksinimler>
+  </Gorev>
+  <Gorev>
     <Id>hzupugsygeovhqzbwuzmwjtsovlukgvkbimakzrwkfydmnrcpm9091</Id>
     <GorevAdi>Deploy database to Azure</GorevAdi>
     <GorevKodu>DEP-56</GorevKodu>
     <Aciklama>Deploy database to Azure using generated migration script</Aciklama>
-    <gorevDurumu>Tamanlanmamiş</gorevDurumu>
+    <gorevDurumu>Onaylandi</gorevDurumu>
     <teslimDurumu>Teslim Edilmedi</teslimDurumu>
     <EklemeTarihi>5/29/2022 12:48:45 PM</EklemeTarihi>
     <calisan>
