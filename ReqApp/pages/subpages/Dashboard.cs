@@ -1,4 +1,5 @@
-﻿using System;
+﻿//Resulberdi Akyyev 152120181074 akyyevresul99@gmail.com
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,8 +20,6 @@ namespace ReqApp.pages.subpages
         public Dashboard()
         {
             InitializeComponent();
-
-            initLabeCounts();
         }
 
         private void initLabeCounts()
@@ -34,6 +33,12 @@ namespace ReqApp.pages.subpages
             this.incompleteTaskLabel.Text = incompleteTaskCount.ToString();
             this.requirementLabel.Text = reqCount.ToString();
             this.workersLabel.Text = workersCount.ToString();
+        }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+
+            initLabeCounts();
         }
     }
 }

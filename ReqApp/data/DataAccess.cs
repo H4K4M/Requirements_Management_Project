@@ -1,4 +1,15 @@
-﻿using System;
+<<<<<<< HEAD
+﻿/*
+  Author: Muhammed Suwaneh
+  Software Engineer & Student
+  Eskişehir Osmangazi University
+  May 2022
+ */
+=======
+﻿//Resulberdi Akyyev 152120181074 akyyevresul99@gmail.com
+// Yavuz Ucarkus 152120171006 yavuzucarkus9@gmail.com
+>>>>>>> a4042056c18513fc1e5f33fed19b8413bca744cd
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -15,6 +26,9 @@ namespace ReqApp.data
     {
 
         #region Calisanlar
+        /*Hakam Chedo 152120181096
+         * magnitar123@gmail.com
+         */
         static int calisanCount = 0;
 
         //--------------------------------------------Calişanlar----------------------------//
@@ -68,7 +82,7 @@ namespace ReqApp.data
             calisanCount = calisanlar.Count;
             return calisanlar;
         }// end
-        public static bool DeleteCalisan(string Id)
+        public static bool DeleteCalisan(string calisanId)
         {
             var path = @"../../data/Calisanlar.xml";
             XmlDocument xmlDoc = new XmlDocument();
@@ -82,7 +96,7 @@ namespace ReqApp.data
             for (int i = 0; i < CalisanList.Count; i++)
             {
                 //--Check Name and Lastname to delete
-                if (CalisanList[i].SelectSingleNode("Id").InnerText.Equals(Id))
+                if (CalisanList[i].SelectSingleNode("Id").InnerText.Equals(calisanId))
                 {
                     rootNode.RemoveChild(CalisanList[i]);
 
@@ -175,7 +189,7 @@ namespace ReqApp.data
             return true;
         }
 
-        public static bool DeleteGereksinim(string Id)
+        public static bool DeleteGereksinim(string gereksinimId)
         {
             var path = @"../../data/Gereksinimler.xml";
             XmlDocument xmlDoc = new XmlDocument();
@@ -189,7 +203,7 @@ namespace ReqApp.data
             for (int i = 0; i < gereksinimler.Count; i++)
             {
                 //--Check Name and Lastname to delete
-                if (gereksinimler[i].SelectSingleNode("Id").InnerText.Equals(Id))
+                if (gereksinimler[i].SelectSingleNode("Id").InnerText.Equals(gereksinimId))
                 {
                     rootNode.RemoveChild(gereksinimler[i]);
 
@@ -220,9 +234,9 @@ namespace ReqApp.data
 
         public static bool AddGorev(List<Gorev> gorev)
         {
-            var path = @"../../data/Gereksinimler.xml";
+            var path = @"../../data/Gorevler.xml";
 
-            XmlSerializer deserializer = new XmlSerializer(typeof(List<Gereksinim>));
+            XmlSerializer deserializer = new XmlSerializer(typeof(List<Gorev>));
 
             var gorevler = new List<Gorev>();
             //------------check if gereksinim exist--------------// 
@@ -236,7 +250,10 @@ namespace ReqApp.data
                 {
                     for (int i = 0; i < gorevler.Count; i++)
                     {
-                        if(gorevler[i].GorevKodu == gorev[gorev.Count - 1].GorevKodu && gorevler[i].gorevDurumu == "Tamanlanmamiş")
+                        // avoid giving the same gorev to worker once it is not done or evaluated
+                        if((gorevler[i].GorevKodu == gorev[gorev.Count - 1].GorevKodu ||
+                            gorevler[i].GorevAdi == gorev[gorev.Count - 1].GorevAdi) && gorevler[i].gorevDurumu == "Tamamlanmamiş"
+                            && gorevler[i].calisan.Id == gorev[gorev.Count - 1].calisan.Id)
                         {
                             MessageBox.Show("Bu gorev mevcüttür!", "Uyarı!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             return false;
@@ -248,16 +265,40 @@ namespace ReqApp.data
             using (TextWriter writer = new StreamWriter(path))
             {
                 XmlSerializer serializer = new XmlSerializer(typeof(List<Gorev>));
-                serializer.Serialize(writer, gorevler);
+                serializer.Serialize(writer, gorev);
             }//end-writeData
 
+            return true;
+        }
+
+        public static bool DeleteGorev(string gorevId)
+        {
+            var path = @"../../data/Gorevler.xml";
+            XmlDocument xmlDoc = new XmlDocument();
+
+            xmlDoc.Load(path);
+
+            XmlNode rootNode = xmlDoc.SelectSingleNode("ArrayOfGorev");
+
+            XmlNodeList gorevler = rootNode.SelectNodes("Gorev");
+            // delete calisan
+            for (int i = 0; i < gorevler.Count; i++)
+            {
+                //--Check Name and Lastname to delete
+                if (gorevler[i].SelectSingleNode("Id").InnerText.Equals(gorevId))
+                {
+                    rootNode.RemoveChild(gorevler[i]);
+
+                    xmlDoc.Save(path);
+                }//end-if
+            }//end-for
             return true;
         }
 
         #endregion
 
         #region Gorevlerim 
-        public static List<Gorev> GetGereksinimler(string CalisanId)
+        public static List<Gorev> GetGorev(string CalisanId)
         {
             var gorevler = GetGorevler();
 
@@ -265,13 +306,41 @@ namespace ReqApp.data
 
             foreach(var gorev in gorevler)
             {
-                if(gorev.calisan.Id == CalisanId)
+                if(gorev.calisan.Id == CalisanId && gorev.teslimDurumu == "Teslim Edilmedi")
                 {
                     gorevlerim.Add(gorev);
                 }
             }
 
             return gorevlerim;
+        }
+
+        public static List<Teslim> GetTeslimer()
+        {
+            XmlSerializer deserializer = new XmlSerializer(typeof(List<Teslim>));
+
+            var teslimler = new List<Teslim>();
+
+            using (TextReader reader = new StreamReader(@"../../data/Teslimler.xml"))
+            {
+                object obj = deserializer.Deserialize(reader);
+                teslimler = (List<Teslim>)obj;
+            }//end-ReadData
+
+            return teslimler;
+        }
+
+        public static bool addTeslim(List<Teslim> teslim)
+        {
+            var path = @"../../data/Teslimler.xml";
+
+            using (TextWriter writer = new StreamWriter(path))
+            {
+                XmlSerializer serializer = new XmlSerializer(typeof(List<Teslim>));
+                serializer.Serialize(writer, teslim);
+            }//end-writeData
+
+            return true;
         }
 
 
@@ -284,7 +353,7 @@ namespace ReqApp.data
             int count = 0;
             foreach(var gorev in gorevler)
             {
-                if(gorev.gorevDurumu == "Tamamlanmis")
+                if(gorev.gorevDurumu == "Tamamlanmiş" || gorev.teslimDurumu == "Teslim Edildi" || gorev.gorevDurumu == "Onaylandi")
                 {
                     count++;
                 }
@@ -299,7 +368,7 @@ namespace ReqApp.data
             int count = 0;
             foreach (var gorev in gorevler)
             {
-                if (gorev.gorevDurumu == "Tamamlanmamis")
+                if (gorev.gorevDurumu == "Tamamlanmamiş")
                 {
                     count++;
                 }

@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+  Author: Muhammed Suwaneh
+  Software Engineer & Student
+  Eskişehir Osmangazi University
+  May 2022
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

@@ -10,7 +10,9 @@ using System.Windows.Forms;
 using ReqApp.models;
 using ReqApp.data;
 using ReqApp.helpers;
-
+/* Hakam Chedo 152120181096
+ * magnitar123@gmail.com
+ */
 namespace ReqApp.pages.subpages
 {
     public partial class Calisanlar : Form
@@ -21,8 +23,8 @@ namespace ReqApp.pages.subpages
         private Button GuncelemeButton = new Button
         {
             Text = "Güncel",
-            Location = new Point(35, 171),
-            Size = new Size(423, 43),
+            Location = new Point(30, 300),
+            Size = new Size(350, 53),
             BackColor = Color.Aquamarine
         };
         public Calisanlar()
@@ -31,10 +33,13 @@ namespace ReqApp.pages.subpages
 
             calisanlar = DataAccess.GetCalisanlar();
 
-            for(int i = 0; i < calisanlar.Count(); i++)
+            if(calisanlar.Count > 0)
             {
-                dataGridView1.Rows.Add(calisanlar[i].Id, calisanlar[i].Adi, calisanlar[i].Soyad, calisanlar[i].user.username, calisanlar[i].user.email,
-                    calisanlar[i].Dogum, calisanlar[i].Maas);
+                for (int i = 0; i < calisanlar.Count(); i++)
+                {
+                    dataGridView1.Rows.Add(calisanlar[i].Id, calisanlar[i].Adi, calisanlar[i].Soyad, calisanlar[i].user.username, calisanlar[i].user.email,
+                        calisanlar[i].Dogum, calisanlar[i].Maas);
+                }
             }
 
             IptalButton.Hide();
@@ -51,7 +56,7 @@ namespace ReqApp.pages.subpages
                     Id = generatedId,
                     username = usernameTextBox.Text,
                     email = emailTextBox.Text,
-                    password = passwordTexBox.Text,
+                    password = Encryption.Encrypt(passwordTexBox.Text),
                     role = "Staff"
                 };
 
@@ -89,7 +94,7 @@ namespace ReqApp.pages.subpages
             {
                 if(senderGrid.Columns[e.ColumnIndex] == Sil) //SilmeButton click
                 {
-                    DataAccess.DeleteCalisan(calisanlar[e.RowIndex].Id);
+                    DataAccess.DeleteCalisan(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
                     dataGridView1.Rows.RemoveAt(e.RowIndex);
 
                     //Clear Textboxes and get Eklebutton if silmebutton click while GuncelemeButton is on
@@ -113,6 +118,8 @@ namespace ReqApp.pages.subpages
                     EkleButton.Hide();
                     GuncelemeButton.Show();
                     IptalButton.Show();
+                    IptalButton.Location = new Point(450, 300);
+                    IptalButton.Size = new Size(350, 53);
                     GuncelemeButton.Click += new EventHandler(GuncelemeButton_Click);
                     this.Controls.Add(GuncelemeButton);
                     //-----------------------------//

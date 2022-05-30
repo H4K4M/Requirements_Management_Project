@@ -1,4 +1,10 @@
-﻿using ReqApp.models;
+﻿/*
+  Author: Muhammed Suwaneh
+  Software Engineer & Student
+  Eskişehir Osmangazi University
+  May 2022
+ */
+using ReqApp.models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,7 +14,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/* Hakam Chedo 152120181096
+ * magnitar123@gmail.com
+*/
 namespace ReqApp.pages.subpages
 {
     public partial class Profil : Form

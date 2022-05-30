@@ -55,16 +55,12 @@
   <ItemGroup>
     <Compile Include="data\DataAccess.cs" />
     <Compile Include="helpers\Encryption.cs" />
-    <Compile Include="helpers\Feedback.cs" />
     <Compile Include="helpers\TimeOut.cs" />
     <Compile Include="models\Calisan.cs" />
-    <Compile Include="models\Degerlendirme.cs" />
-    <Compile Include="models\DegerlendirmeType.cs" />
     <Compile Include="models\Gereksinim.cs" />
     <Compile Include="models\Gorev.cs" />
     <Compile Include="models\Session.cs" />
-    <Compile Include="models\Sonuc.cs" />
-    <Compile Include="models\TeslimEdildi.cs" />
+    <Compile Include="models\Teslim.cs" />
     <Compile Include="models\User.cs" />
     <Compile Include="pages\EsoguTechReq.cs">
       <SubType>Form</SubType>
@@ -99,7 +95,7 @@
     <Compile Include="pages\subpages\Gorevlerim.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="pages\subpages\Gorevlerim.designer.cs">
+    <Compile Include="pages\subpages\Gorevlerim.Designer.cs">
       <DependentUpon>Gorevlerim.cs</DependentUpon>
     </Compile>
     <Compile Include="pages\subpages\IsDegerlendirme.cs">
@@ -177,6 +173,7 @@
     <Content Include="data\Calisanlar.xml" />
     <Content Include="data\Gereksinimler.xml" />
     <Content Include="data\Gorevler.xml" />
+    <Content Include="data\Teslimler.xml" />
     <Content Include="static\Launch.ico" />
     <Content Include="static\Logo.png" />
   </ItemGroup>
