@@ -1,14 +1,11 @@
-<<<<<<< HEAD
-﻿/*
+/*
   Author: Muhammed Suwaneh
   Software Engineer & Student
   Eskişehir Osmangazi University
   May 2022
  */
-=======
 ﻿//Resulberdi Akyyev 152120181074 akyyevresul99@gmail.com
 // Yavuz Ucarkus 152120171006 yavuzucarkus9@gmail.com
->>>>>>> a4042056c18513fc1e5f33fed19b8413bca744cd
 using System;
 using System.Collections.Generic;
 using System.IO;
