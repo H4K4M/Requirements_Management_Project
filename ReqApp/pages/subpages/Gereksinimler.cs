@@ -1,4 +1,8 @@
-﻿using ReqApp.data;
+﻿/*
+ @author Enes Ay 152120191097
+ */
+
+using ReqApp.data;
 using ReqApp.helpers;
 using ReqApp.models;
 using System;
@@ -151,6 +155,11 @@ namespace ReqApp.pages.subpages
             YeniGereksinimButton.Show();
             GuncelemeButton.Click -= new EventHandler(GuncelemeButton_Click);
             //----------------
+        }
+
+        private void Gereksinimler_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

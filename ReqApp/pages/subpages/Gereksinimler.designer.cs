@@ -235,6 +235,7 @@ namespace ReqApp.pages.subpages
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Gereksinimler";
+            this.Load += new System.EventHandler(this.Gereksinimler_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gereksinimListView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
