@@ -37,10 +37,9 @@ namespace ReqApp.pages.subpages
             this.TeslimTarihi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Tamamlanmamis = new System.Windows.Forms.CheckBox();
+            this.TamamlanmamisCheckBox = new System.Windows.Forms.CheckBox();
             this.TamamlanmisCheckBox = new System.Windows.Forms.CheckBox();
             this.iyiYapilmisCheckBox = new System.Windows.Forms.CheckBox();
-            this.MukemmelCheckBox = new System.Windows.Forms.CheckBox();
             this.ReddetButonu = new System.Windows.Forms.Button();
             this.onaylaButton = new System.Windows.Forms.Button();
             this.GorevLinkKopylaButton = new System.Windows.Forms.Button();
@@ -89,7 +88,7 @@ namespace ReqApp.pages.subpages
             this.teslimlerListView.RowHeadersWidth = 51;
             this.teslimlerListView.RowTemplate.Height = 24;
             this.teslimlerListView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.teslimlerListView.Size = new System.Drawing.Size(988, 735);
+            this.teslimlerListView.Size = new System.Drawing.Size(896, 735);
             this.teslimlerListView.TabIndex = 9;
             this.teslimlerListView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.teslimlerListView_CellContentClick);
             // 
@@ -131,7 +130,7 @@ namespace ReqApp.pages.subpages
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(1037, 23);
+            this.label3.Location = new System.Drawing.Point(931, 27);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(275, 29);
             this.label3.TabIndex = 6;
@@ -141,10 +140,9 @@ namespace ReqApp.pages.subpages
             // 
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel1.Controls.Add(this.Tamamlanmamis);
+            this.panel1.Controls.Add(this.TamamlanmamisCheckBox);
             this.panel1.Controls.Add(this.TamamlanmisCheckBox);
             this.panel1.Controls.Add(this.iyiYapilmisCheckBox);
-            this.panel1.Controls.Add(this.MukemmelCheckBox);
             this.panel1.Controls.Add(this.ReddetButonu);
             this.panel1.Controls.Add(this.onaylaButton);
             this.panel1.Controls.Add(this.GorevLinkKopylaButton);
@@ -158,26 +156,26 @@ namespace ReqApp.pages.subpages
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Location = new System.Drawing.Point(1042, 68);
+            this.panel1.Location = new System.Drawing.Point(936, 72);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(570, 751);
             this.panel1.TabIndex = 7;
             // 
-            // Tamamlanmamis
+            // TamamlanmamisCheckBox
             // 
-            this.Tamamlanmamis.AutoSize = true;
-            this.Tamamlanmamis.Location = new System.Drawing.Point(405, 626);
-            this.Tamamlanmamis.Name = "Tamamlanmamis";
-            this.Tamamlanmamis.Size = new System.Drawing.Size(136, 21);
-            this.Tamamlanmamis.TabIndex = 21;
-            this.Tamamlanmamis.Text = "Tamamlanmamış";
-            this.Tamamlanmamis.UseVisualStyleBackColor = true;
-            this.Tamamlanmamis.CheckedChanged += new System.EventHandler(this.Tamamlanmamis_CheckedChanged);
+            this.TamamlanmamisCheckBox.AutoSize = true;
+            this.TamamlanmamisCheckBox.Location = new System.Drawing.Point(287, 627);
+            this.TamamlanmamisCheckBox.Name = "TamamlanmamisCheckBox";
+            this.TamamlanmamisCheckBox.Size = new System.Drawing.Size(136, 21);
+            this.TamamlanmamisCheckBox.TabIndex = 21;
+            this.TamamlanmamisCheckBox.Text = "Tamamlanmamış";
+            this.TamamlanmamisCheckBox.UseVisualStyleBackColor = true;
+            this.TamamlanmamisCheckBox.CheckedChanged += new System.EventHandler(this.Tamamlanmamis_CheckedChanged);
             // 
             // TamamlanmisCheckBox
             // 
             this.TamamlanmisCheckBox.AutoSize = true;
-            this.TamamlanmisCheckBox.Location = new System.Drawing.Point(276, 626);
+            this.TamamlanmisCheckBox.Location = new System.Drawing.Point(158, 627);
             this.TamamlanmisCheckBox.Name = "TamamlanmisCheckBox";
             this.TamamlanmisCheckBox.Size = new System.Drawing.Size(117, 21);
             this.TamamlanmisCheckBox.TabIndex = 20;
@@ -188,24 +186,13 @@ namespace ReqApp.pages.subpages
             // iyiYapilmisCheckBox
             // 
             this.iyiYapilmisCheckBox.AutoSize = true;
-            this.iyiYapilmisCheckBox.Location = new System.Drawing.Point(168, 626);
+            this.iyiYapilmisCheckBox.Location = new System.Drawing.Point(50, 627);
             this.iyiYapilmisCheckBox.Name = "iyiYapilmisCheckBox";
             this.iyiYapilmisCheckBox.Size = new System.Drawing.Size(99, 21);
             this.iyiYapilmisCheckBox.TabIndex = 19;
             this.iyiYapilmisCheckBox.Text = "İyi Yapılmış";
             this.iyiYapilmisCheckBox.UseVisualStyleBackColor = true;
             this.iyiYapilmisCheckBox.CheckedChanged += new System.EventHandler(this.iyiYapilmisCheckBox_CheckedChanged);
-            // 
-            // MukemmelCheckBox
-            // 
-            this.MukemmelCheckBox.AutoSize = true;
-            this.MukemmelCheckBox.Location = new System.Drawing.Point(53, 626);
-            this.MukemmelCheckBox.Name = "MukemmelCheckBox";
-            this.MukemmelCheckBox.Size = new System.Drawing.Size(97, 21);
-            this.MukemmelCheckBox.TabIndex = 10;
-            this.MukemmelCheckBox.Text = "Mükemmel";
-            this.MukemmelCheckBox.UseVisualStyleBackColor = true;
-            this.MukemmelCheckBox.CheckedChanged += new System.EventHandler(this.MukemmelCheckBox_CheckedChanged);
             // 
             // ReddetButonu
             // 
@@ -408,9 +395,8 @@ namespace ReqApp.pages.subpages
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button ReddetButonu;
         private System.Windows.Forms.Button onaylaButton;
-        private System.Windows.Forms.CheckBox Tamamlanmamis;
+        private System.Windows.Forms.CheckBox TamamlanmamisCheckBox;
         private System.Windows.Forms.CheckBox TamamlanmisCheckBox;
         private System.Windows.Forms.CheckBox iyiYapilmisCheckBox;
-        private System.Windows.Forms.CheckBox MukemmelCheckBox;
     }
 }

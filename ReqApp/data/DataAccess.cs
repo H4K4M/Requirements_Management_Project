@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+  Author: Muhammed Suwaneh
+  Software Engineer & Student
+  Eskişehir Osmangazi University
+  May 2022
+ */
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -238,7 +244,7 @@ namespace ReqApp.data
                     {
                         // avoid giving the same gorev to worker once it is not done or evaluated
                         if((gorevler[i].GorevKodu == gorev[gorev.Count - 1].GorevKodu ||
-                            gorevler[i].GorevAdi == gorev[gorev.Count - 1].GorevAdi) && gorevler[i].gorevDurumu == "Tamanlanmamiş"
+                            gorevler[i].GorevAdi == gorev[gorev.Count - 1].GorevAdi) && gorevler[i].gorevDurumu == "Tamamlanmamiş"
                             && gorevler[i].calisan.Id == gorev[gorev.Count - 1].calisan.Id)
                         {
                             MessageBox.Show("Bu gorev mevcüttür!", "Uyarı!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -320,8 +326,6 @@ namespace ReqApp.data
         {
             var path = @"../../data/Teslimler.xml";
 
-            XmlSerializer deserializer = new XmlSerializer(typeof(List<Teslim>));
-
             using (TextWriter writer = new StreamWriter(path))
             {
                 XmlSerializer serializer = new XmlSerializer(typeof(List<Teslim>));
@@ -341,7 +345,7 @@ namespace ReqApp.data
             int count = 0;
             foreach(var gorev in gorevler)
             {
-                if(gorev.gorevDurumu == "Tamamlanmiş")
+                if(gorev.gorevDurumu == "Tamamlanmiş" || gorev.teslimDurumu == "Teslim Edildi" || gorev.gorevDurumu == "Onaylandi")
                 {
                     count++;
                 }
@@ -356,7 +360,7 @@ namespace ReqApp.data
             int count = 0;
             foreach (var gorev in gorevler)
             {
-                if (gorev.gorevDurumu == "Tamanlanmamiş")
+                if (gorev.gorevDurumu == "Tamamlanmamiş")
                 {
                     count++;
                 }

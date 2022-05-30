@@ -57,7 +57,6 @@
     <Compile Include="helpers\Encryption.cs" />
     <Compile Include="helpers\TimeOut.cs" />
     <Compile Include="models\Calisan.cs" />
-    <Compile Include="models\Degerlendirme.cs" />
     <Compile Include="models\Gereksinim.cs" />
     <Compile Include="models\Gorev.cs" />
     <Compile Include="models\Session.cs" />
@@ -172,7 +171,6 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="data\Calisanlar.xml" />
-    <Content Include="data\Degerlendirmeler.xml" />
     <Content Include="data\Gereksinimler.xml" />
     <Content Include="data\Gorevler.xml" />
     <Content Include="data\Teslimler.xml" />

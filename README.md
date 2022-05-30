@@ -6,9 +6,9 @@ A desktop application which allows workers to be assigned tasks, monitor and eva
 
 ## Prerequisites
 
-You can run the application using the [ReqApp.exe](ReqApp/bin/Debug/ReqApp.exe) file. To run the source code, Visual studio with C#, .Net and
-Windows Forms needs to be installed. The fontawesome library needs not be installed since the static file is already available. However
-can be updated to new version if any update(s) is/are available
+You can run the application using the [ReqApp.exe](ReqApp/bin/Debug/) file. To run the source code, Visual studio with C#, .Net and
+Windows Forms needs to be installed. The fontawesome library needs not be installed since the static files are already available. However
+can be updated to a new version if any update(s) is/are available
 
 ## Technologies utilised
 
@@ -70,7 +70,7 @@ Users can see task assigned to them from this page. They can as well submit(with
 
 ## Contributors
 
-1. [Enes Ay](https://github.com/nsi-cyber)
+1. [Enes Ay](https://github.com/nsi-cyber) 
 2. [Resulberdi Akyyev](https://github.com/Reak42)
 3. [Muhammed Suwaneh](https://github.com/Muhammedsuwaneh)
 4. [Yavuz Uçarkuş](https://github.com/yavuzucrkss)
