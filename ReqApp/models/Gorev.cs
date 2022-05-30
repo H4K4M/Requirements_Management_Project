@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// Yavuz Ucarkus 152120171006 yavuzucarkus9@gmail.com
 namespace ReqApp.models
 {
     public class Gorev

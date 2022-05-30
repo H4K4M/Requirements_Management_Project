@@ -1,4 +1,5 @@
-﻿using System;
+﻿//Resulberdi Akyyev 152120181074 akyyevresul99@gmail.com
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
