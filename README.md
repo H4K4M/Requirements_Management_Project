@@ -60,7 +60,7 @@ Shows user info
 
 This page is used to evaluate submitted task using a simple DFA model
 
-![Screenshot](Screenshots/Work Evaluation.png)
+![Screenshot](Screenshots/Evaluation.png)
 
 ### My Tasks
 
