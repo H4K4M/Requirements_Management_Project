@@ -1,4 +1,5 @@
 ﻿//Resulberdi Akyyev 152120181074 akyyevresul99@gmail.com
+// Yavuz Ucarkus 152120171006 yavuzucarkus9@gmail.com
 using System;
 using System.Collections.Generic;
 using System.IO;
