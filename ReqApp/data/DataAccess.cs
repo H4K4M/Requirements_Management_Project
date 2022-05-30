@@ -15,6 +15,9 @@ namespace ReqApp.data
     {
 
         #region Calisanlar
+        /*Hakam Chedo 152120181096
+         * magnitar123@gmail.com
+         */
         static int calisanCount = 0;
 
         //--------------------------------------------Calişanlar----------------------------//
