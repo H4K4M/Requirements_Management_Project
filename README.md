@@ -2,7 +2,8 @@
 
 ## About Project
 
-A desktop application which allows workers to be assigned tasks. Given task can also be monitor and evaluated. 
+A desktop application which allows workers to be assigned tasks. Given task can also be monitored and evaluated 
+using DFA automata concepts. [learn more about automata](https://www.sciencedirect.com/topics/computer-science/formal-language)
 
 ## Prerequisites
 
