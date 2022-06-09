@@ -2,13 +2,13 @@
 
 ## About Project
 
-A desktop application which allows workers to be assigned tasks, monitor and evaluated given tasks. 
+A desktop application which allows workers to be assigned tasks. Given task can also be monitor and evaluated. 
 
 ## Prerequisites
 
 You can run the application using the [ReqApp.exe](ReqApp/bin/Debug/) file. To run the source code, Visual studio with C#, .Net and
 Windows Forms needs to be installed. The fontawesome library needs not be installed since the static files are already available. However
-can be updated to a new version if any update(s) is/are available
+can be updated (from the Nuget Package Manager) to a new version if any update(s) is/are available
 
 ## Technologies utilised
 

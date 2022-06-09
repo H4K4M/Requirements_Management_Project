@@ -125,7 +125,7 @@
       <GorevAdi>Create database</GorevAdi>
       <GorevKodu>CR-DB-45</GorevKodu>
       <Aciklama>Create database</Aciklama>
-      <gorevDurumu>Tamamlanmamiş</gorevDurumu>
+      <gorevDurumu>Reddedildi</gorevDurumu>
       <teslimDurumu>Teslim Edilmedi</teslimDurumu>
       <EklemeTarihi>5/29/2022 12:46:26 PM</EklemeTarihi>
       <calisan>
@@ -161,6 +161,117 @@
     </gorev>
     <gorevLinki>www.geekforgeeks.com</gorevLinki>
     <TeslimTarihi>5/30/2022 12:45:47 PM</TeslimTarihi>
-    <teslimDegerlendirildiMi>false</teslimDegerlendirildiMi>
+    <teslimDegerlendirildiMi>true</teslimDegerlendirildiMi>
+  </Teslim>
+  <Teslim>
+    <Id>xmzdyjydqlldmyukyisfppaehgoqveatufmpioyyudkdrnbalz9605</Id>
+    <calisan>
+      <Id>vqjchfklobnhwttxmnnxshdwhxwwfawfaezwzqfnfglvpgutkg9688</Id>
+      <Adi>hakam</Adi>
+      <Soyad>chedo</Soyad>
+      <Dogum>1990-1-1</Dogum>
+      <Maas>7000</Maas>
+      <user>
+        <Id>vqjchfklobnhwttxmnnxshdwhxwwfawfaezwzqfnfglvpgutkg9688</Id>
+        <username>hakam</username>
+        <password>1292201552198220877194054219216496220885</password>
+        <email>hakam@gmail.com</email>
+        <role>Staff</role>
+      </user>
+    </calisan>
+    <gorev>
+      <Id>nkevfayaoiqxcysrnbgztgzhnwpztcbohblsxqhcovgsaauvzo5357</Id>
+      <GorevAdi>Create database</GorevAdi>
+      <GorevKodu>CR-DB-45</GorevKodu>
+      <Aciklama>Create database</Aciklama>
+      <gorevDurumu>Reddedildi</gorevDurumu>
+      <teslimDurumu>Teslim Edilmedi</teslimDurumu>
+      <EklemeTarihi>5/29/2022 12:46:26 PM</EklemeTarihi>
+      <calisan>
+        <Id>vqjchfklobnhwttxmnnxshdwhxwwfawfaezwzqfnfglvpgutkg9688</Id>
+        <Adi>hakam</Adi>
+        <Soyad>chedo</Soyad>
+        <Dogum>1990-1-1</Dogum>
+        <Maas>7000</Maas>
+        <user>
+          <Id>vqjchfklobnhwttxmnnxshdwhxwwfawfaezwzqfnfglvpgutkg9688</Id>
+          <username>hakam</username>
+          <password>1292201552198220877194054219216496220885</password>
+          <email>hakam@gmail.com</email>
+          <role>Staff</role>
+        </user>
+      </calisan>
+      <gereksinimler>
+        <Gereksinim>
+          <Id>dfxznnnvjinfnfhhruxxwhzrlvhgbddmzbsacfljmuwfrbyqhy2010</Id>
+          <GereksinimAdi>Minimum of 5 tables</GereksinimAdi>
+          <GereksinimKodu>DB-1</GereksinimKodu>
+          <Aciklama>Databases needs to have at least 5 tables</Aciklama>
+          <EklemeTarihi>5/29/2022 1:58:51 AM</EklemeTarihi>
+        </Gereksinim>
+        <Gereksinim>
+          <Id>ynjdwgforfgugebflmheminlbktajxrycafyqywtwqtefaqbpv5370</Id>
+          <GereksinimAdi>Database Type</GereksinimAdi>
+          <GereksinimKodu>DB-2</GereksinimKodu>
+          <Aciklama>Databases needs to be MYSQL</Aciklama>
+          <EklemeTarihi>5/29/2022 1:59:22 AM</EklemeTarihi>
+        </Gereksinim>
+      </gereksinimler>
+    </gorev>
+    <gorevLinki>grgrhth</gorevLinki>
+    <TeslimTarihi>6/3/2022 11:18:41 AM</TeslimTarihi>
+    <teslimDegerlendirildiMi>true</teslimDegerlendirildiMi>
+  </Teslim>
+  <Teslim>
+    <Id>dwekiluwsvhhmksjhlebkjullewntenfvfwwquednsgcmvysze8073</Id>
+    <calisan>
+      <Id>vplvapmctohgeagmkhbzvojbjmnzvwunjsmtpszxdnrmedlqtu7177</Id>
+      <Adi>resulberdi</Adi>
+      <Soyad>akyyev</Soyad>
+      <Dogum>1990-1-1</Dogum>
+      <Maas>7000</Maas>
+      <user>
+        <Id>vplvapmctohgeagmkhbzvojbjmnzvwunjsmtpszxdnrmedlqtu7177</Id>
+        <username>resulberdi</username>
+        <password>1292201552198220877194054219216496220885</password>
+        <email>resulberdi@yahoo.com</email>
+        <role>Staff</role>
+      </user>
+    </calisan>
+    <gorev>
+      <Id>hzupugsygeovhqzbwuzmwjtsovlukgvkbimakzrwkfydmnrcpm9091</Id>
+      <GorevAdi>Deploy database to Azure</GorevAdi>
+      <GorevKodu>DEP-56</GorevKodu>
+      <Aciklama>Deploy database to Azure using generated migration script</Aciklama>
+      <gorevDurumu>Reddedildi</gorevDurumu>
+      <teslimDurumu>Teslim Edilmedi</teslimDurumu>
+      <EklemeTarihi>5/29/2022 12:48:45 PM</EklemeTarihi>
+      <calisan>
+        <Id>vplvapmctohgeagmkhbzvojbjmnzvwunjsmtpszxdnrmedlqtu7177</Id>
+        <Adi>resulberdi</Adi>
+        <Soyad>akyyev</Soyad>
+        <Dogum>1990-1-1</Dogum>
+        <Maas>7000</Maas>
+        <user>
+          <Id>vplvapmctohgeagmkhbzvojbjmnzvwunjsmtpszxdnrmedlqtu7177</Id>
+          <username>resulberdi</username>
+          <password>1292201552198220877194054219216496220885</password>
+          <email>resulberdi@yahoo.com</email>
+          <role>Staff</role>
+        </user>
+      </calisan>
+      <gereksinimler>
+        <Gereksinim>
+          <Id>okdxgkwijkzhmhcqanatwuekyaghmbuzfpmddeehbiyspnulxk7693</Id>
+          <GereksinimAdi>Deployment</GereksinimAdi>
+          <GereksinimKodu>DEP-DA</GereksinimKodu>
+          <Aciklama>Deploy database to Azure</Aciklama>
+          <EklemeTarihi>5/29/2022 12:47:52 PM</EklemeTarihi>
+        </Gereksinim>
+      </gereksinimler>
+    </gorev>
+    <gorevLinki>sgh6ty8u9</gorevLinki>
+    <TeslimTarihi>6/3/2022 11:19:32 AM</TeslimTarihi>
+    <teslimDegerlendirildiMi>true</teslimDegerlendirildiMi>
   </Teslim>
 </ArrayOfTeslim>
