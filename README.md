@@ -17,7 +17,7 @@ can be updated (from the Nuget Package Manager) to a new version if any update(s
   <img src="https://img.shields.io/badge/-.Net Framework-red" />
   <img src="https://img.shields.io/badge/-Windows Forms-white" />
   <img src="https://img.shields.io/badge/-Fontawesome-orange" />
-  <img src="https://img.shields.io/badge/-Adboe XD(UI/UX Design)-blue" />
+  <img src="https://img.shields.io/badge/-Adobe XD(UI/UX Design)-blue" />
 </div>
 
 ## UI Screenshots
