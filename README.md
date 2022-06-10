@@ -12,12 +12,13 @@ Windows Forms needs to be installed. The fontawesome library needs not be instal
 can be updated (from the Nuget Package Manager) to a new version if any update(s) is/are available
 
 ## Technologies utilised
-
-1. C#
-2. .Net 
-3. Windows Forms
-4. Fontawesome (Icons)
-5. Adobe XD (UI/UX Design)
+<div id="badges">
+  <img src="https://img.shields.io/badge/-C Sharp-green" />
+  <img src="https://img.shields.io/badge/-.Net Framework-red" />
+  <img src="https://img.shields.io/badge/-Windows Forms-white" />
+  <img src="https://img.shields.io/badge/-Fontawesome-orange" />
+  <img src="https://img.shields.io/badge/-Adboe XD(UI/UX Design)-blue" />
+</div>
 
 ## UI Screenshots
 
