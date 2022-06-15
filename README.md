@@ -68,7 +68,7 @@ This page is used to evaluate submitted task using a simple DFA model
 
 Users can see task assigned to them from this page. They can as well submit(with a link) their task if completed. 
 
-![Screenshot](Screenshots/My Task.png)
+![Screenshot](Screenshots/MyTask.png)
 
 ## Contributors
 
