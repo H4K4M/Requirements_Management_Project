@@ -60,7 +60,7 @@ Shows user info
 
 ### Work Evaluation
 
-This page is used to evaluate submitted task using a simple DFA model
+This page evaluates submitted task using a simple DFA model
 
 ![Screenshot](Screenshots/Evaluation.png)
 
